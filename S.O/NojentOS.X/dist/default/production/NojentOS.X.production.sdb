@@ -1,0 +1,604 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18LF4520 ]
+[d frameptr 4065 ]
+"31 F:\Documentos\UFSC\SO-Embarcados\nojo/delay.c
+[e E3131 . `uc
+READY 0
+RUNNING 1
+WAITING 2
+FINISHED 3
+]
+"5 F:\Documentos\UFSC\SO-Embarcados\nojo/kernel.c
+[e E3131 . `uc
+READY 0
+RUNNING 1
+WAITING 2
+FINISHED 3
+]
+"9 F:\Documentos\UFSC\SO-Embarcados\nojo/scheduler.c
+[e E3131 . `uc
+READY 0
+RUNNING 1
+WAITING 2
+FINISHED 3
+]
+"14 F:\Documentos\UFSC\SO-Embarcados\nojo/semaphore.c
+[e E3131 . `uc
+READY 0
+RUNNING 1
+WAITING 2
+FINISHED 3
+]
+"37 F:\Documentos\UFSC\SO-Embarcados\nojo/timer.c
+[e E3131 . `uc
+READY 0
+RUNNING 1
+WAITING 2
+FINISHED 3
+]
+"8 F:\Documentos\UFSC\SO-Embarcados\nojo/delay.c
+[v _delay_queue_create delay_queue_create `(v  1 e 1 0 ]
+"15
+[v _delay_queue_insert delay_queue_insert `(v  1 e 1 0 ]
+"8 F:\Documentos\UFSC\SO-Embarcados\nojo/kernel.c
+[v _nojoStart nojoStart `(v  1 e 1 0 ]
+"25
+[v _nojoTaskCreate nojoTaskCreate `(v  1 e 1 0 ]
+"38
+[v _nojoDispatcher nojoDispatcher `(v  1 e 1 0 ]
+"63
+[v _nojoTaskIdle nojoTaskIdle `(*.2v  1 e 2 0 ]
+"91
+[v _Inicializa_ADC Inicializa_ADC `(v  1 e 1 0 ]
+"99
+[v _PWM1_Init PWM1_Init `(v  1 e 1 0 ]
+"110
+[v _Init_PWM_AD Init_PWM_AD `(v  1 e 1 0 ]
+"6 F:\Documentos\UFSC\SO-Embarcados\nojo/main.c
+[v _main main `(i  1 e 2 0 ]
+"17 F:\Documentos\UFSC\SO-Embarcados\nojo/perifericos.c
+[v _LerADC LerADC `(ui  1 e 2 0 ]
+"30
+[v _PWM1_value PWM1_value `(v  1 e 1 0 ]
+"38
+[v _map map `(i  1 e 2 0 ]
+"4 F:\Documentos\UFSC\SO-Embarcados\nojo/queue.c
+[v _queue_create queue_create `(v  1 e 1 0 ]
+"9
+[v _queue_insert queue_insert `(v  1 e 1 0 ]
+"16
+[v _queue_remove queue_remove `(ul  1 e 4 0 ]
+"18 F:\Documentos\UFSC\SO-Embarcados\nojo/scheduler.c
+[v _RR_scheduler RR_scheduler `(ul  1 e 4 0 ]
+"32 F:\Documentos\UFSC\SO-Embarcados\nojo/tasks.c
+[v _pisca_led_yellow pisca_led_yellow `(*.2v  1 e 2 0 ]
+"48
+[v _pisca_led_green pisca_led_green `(*.2v  1 e 2 0 ]
+"64
+[v _valor_res_motor valor_res_motor `(v  1 e 1 0 ]
+"84
+[v _modificar_temp modificar_temp `(v  1 e 1 0 ]
+"109
+[v _verificarInput verificarInput `(*.2v  1 e 2 0 ]
+"150
+[v _botaoAumentar botaoAumentar `(v  1 e 1 0 ]
+"176
+[v _mostraDisplay mostraDisplay `(v  1 e 1 0 ]
+"4 F:\Documentos\UFSC\SO-Embarcados\nojo/timer.c
+[v _setupTimer setupTimer `(v  1 e 1 0 ]
+"17
+[v _nojoScheduler nojoScheduler `(v  1 e 1 0 ]
+"25
+[v _resetTimer resetTimer `(v  1 e 1 0 ]
+"33
+[v _timer_ISR timer_ISR `II(v  1 e 1 0 ]
+"8 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"62 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"8 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"10 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
+"15 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+[s S38 stack_context 3 `uc 1 TOSL 1 0 `uc 1 TOSH 1 1 `uc 1 TOSU 1 2 :5:0 
+]
+"5 F:\Documentos\UFSC\SO-Embarcados\nojo/kernel.c
+[s S42 stack 94 `[31]S38 1 task_stack 93 0 `uc 1 stack_size 1 93 ]
+[s S45 ctx 101 `uc 1 ctx_WORK 1 0 `uc 1 ctx_BSR 1 1 `uc 1 ctx_STATUS 1 2 `uc 1 ctx_STKPTR 1 3 `uc 1 ctx_PCL 1 4 `uc 1 ctx_PCLATU 1 5 `uc 1 ctx_PCLATH 1 6 `S42 1 ctx_STACK 94 7 ]
+[s S54 tcb 112 `ul 1 task_ID 4 0 `ul 1 task_PRIOR 4 4 `E3131 1 task_STATE 1 8 `*.37(*.2v 1 task_PTR 2 9 `S45 1 task_CTX 101 11 ]
+[s S60 fila 456 `[4]S54 1 FILA_APTOS 448 0 `ul 1 tasks_installed 4 448 `ul 1 task_running 4 452 ]
+[v _F_APTOS F_APTOS `S60  1 e 456 0 ]
+[s S21 delay_data 8 `ul 1 task_pos_ready_queue 4 0 `ul 1 task_delay_remaning 4 4 ]
+"6
+[s S24 queue_delay 28 `[3]S21 1 delay_QUEUE 24 0 `ul 1 delay_queue_size 4 24 ]
+[v _Q_DELAY Q_DELAY `S24  1 e 28 0 ]
+"8 F:\Documentos\UFSC\SO-Embarcados\nojo/kernel.h
+[v _tWORK tWORK `uc  1 e 1 0 ]
+[v _tBSR tBSR `uc  1 e 1 0 ]
+[v _tSTATUS tSTATUS `uc  1 e 1 0 ]
+"16 F:\Documentos\UFSC\SO-Embarcados\nojo/tasks.c
+[v _temperatura_desejada temperatura_desejada `i  1 e 2 0 ]
+[v _unidade unidade `i  1 e 2 0 ]
+[v _dezena dezena `i  1 e 2 0 ]
+[s S223 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"113 F:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18lf4520.h
+[s S605 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 AN3 1 0 :1:3 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+`uc 1 OSC2 1 0 :1:6 
+`uc 1 OSC1 1 0 :1:7 
+]
+[s S614 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 VREFN 1 0 :1:2 
+`uc 1 VREFP 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 SS 1 0 :1:5 
+`uc 1 CLKO 1 0 :1:6 
+`uc 1 CLKI 1 0 :1:7 
+]
+[s S622 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_SS 1 0 :1:5 
+]
+[s S625 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CVREF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nSS 1 0 :1:5 
+]
+[s S630 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LVDIN 1 0 :1:5 
+]
+[s S633 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 HLVDIN 1 0 :1:5 
+]
+[s S636 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 C1OUT 1 0 :1:4 
+`uc 1 C2OUT 1 0 :1:5 
+]
+[s S640 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :6:1 
+`uc 1 RJPU 1 0 :1:7 
+]
+[u S644 . 1 `S223 1 . 1 0 `S605 1 . 1 0 `S614 1 . 1 0 `S622 1 . 1 0 `S625 1 . 1 0 `S630 1 . 1 0 `S633 1 . 1 0 `S636 1 . 1 0 `S640 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES644  1 e 1 @3968 ]
+"267
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S771 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"492
+[s S813 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 SCK 1 0 :1:3 
+`uc 1 SDI 1 0 :1:4 
+`uc 1 SDO 1 0 :1:5 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S822 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SCL 1 0 :1:3 
+`uc 1 SDA 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S831 . 1 `uc 1 T1CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+]
+[s S835 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[u S839 . 1 `S771 1 . 1 0 `S813 1 . 1 0 `S822 1 . 1 0 `S831 1 . 1 0 `S835 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES839  1 e 1 @3970 ]
+"626
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+[s S703 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"996
+[s S712 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S721 . 1 `S703 1 . 1 0 `S712 1 . 1 0 ]
+[v _LATAbits LATAbits `VES721  1 e 1 @3977 ]
+[s S214 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1496
+[u S232 . 1 `S214 1 . 1 0 `S223 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES232  1 e 1 @3986 ]
+"1685
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1906
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S762 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1938
+[u S780 . 1 `S762 1 . 1 0 `S771 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES780  1 e 1 @3988 ]
+"2127
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4357
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @4026 ]
+"4441
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @4027 ]
+"4453
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
+"4555
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @4030 ]
+"4567
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"4637
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4721
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S257 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"4765
+[s S260 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S264 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S271 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S274 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S277 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S280 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S283 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S286 . 1 `S257 1 . 1 0 `S260 1 . 1 0 `S264 1 . 1 0 `S271 1 . 1 0 `S274 1 . 1 0 `S277 1 . 1 0 `S280 1 . 1 0 `S283 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES286  1 e 1 @4034 ]
+"4845
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"4851
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"5252
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+"5349
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+[s S963 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"6117
+[s S970 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+`uc 1 T0PS3 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 T016BIT 1 0 :1:6 
+]
+[u S977 . 1 `S963 1 . 1 0 `S970 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES977  1 e 1 @4053 ]
+"6176
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+[s S152 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"6617
+[s S161 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S170 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S174 . 1 `S152 1 . 1 0 `S161 1 . 1 0 `S170 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES174  1 e 1 @4082 ]
+"6784
+[v _STKPTR STKPTR `VEuc  1 e 1 @4092 ]
+"6863
+[v _TOSL TOSL `VEuc  1 e 1 @4093 ]
+"6869
+[v _TOSH TOSH `VEuc  1 e 1 @4094 ]
+"6875
+[v _TOSU TOSU `VEuc  1 e 1 @4095 ]
+"7803
+[v _TMR0ON TMR0ON `VEb  1 e 0 @32431 ]
+"6 F:\Documentos\UFSC\SO-Embarcados\nojo/main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"26
+} 0
+"4 F:\Documentos\UFSC\SO-Embarcados\nojo/timer.c
+[v _setupTimer setupTimer `(v  1 e 1 0 ]
+{
+"15
+} 0
+"25 F:\Documentos\UFSC\SO-Embarcados\nojo/kernel.c
+[v _nojoTaskCreate nojoTaskCreate `(v  1 e 1 0 ]
+{
+[v nojoTaskCreate@id id `ul  1 p 4 31 ]
+[v nojoTaskCreate@prior prior `ul  1 p 4 35 ]
+[v nojoTaskCreate@task_PTR task_PTR `*.37(*.2v  1 p 2 39 ]
+"36
+} 0
+"15 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 29 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 25 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 27 ]
+"53
+} 0
+"8 F:\Documentos\UFSC\SO-Embarcados\nojo/kernel.c
+[v _nojoStart nojoStart `(v  1 e 1 0 ]
+{
+"23
+} 0
+"8 F:\Documentos\UFSC\SO-Embarcados\nojo/delay.c
+[v _delay_queue_create delay_queue_create `(v  1 e 1 0 ]
+{
+"9
+[v delay_queue_create@i i `i  1 a 2 29 ]
+[s S21 delay_data 8 `ul 1 task_pos_ready_queue 4 0 `ul 1 task_delay_remaning 4 4 ]
+"8
+[s S24 queue_delay 28 `[3]S21 1 delay_QUEUE 24 0 `ul 1 delay_queue_size 4 24 ]
+[v delay_queue_create@delay_queue_handler delay_queue_handler `*.39S24  1 p 2 25 ]
+"13
+} 0
+"17 F:\Documentos\UFSC\SO-Embarcados\nojo/timer.c
+[v _nojoScheduler nojoScheduler `(v  1 e 1 0 ]
+{
+"23
+} 0
+"110 F:\Documentos\UFSC\SO-Embarcados\nojo/kernel.c
+[v _Init_PWM_AD Init_PWM_AD `(v  1 e 1 0 ]
+{
+"114
+} 0
+"99
+[v _PWM1_Init PWM1_Init `(v  1 e 1 0 ]
+{
+"106
+} 0
+"91
+[v _Inicializa_ADC Inicializa_ADC `(v  1 e 1 0 ]
+{
+"97
+} 0
+"63
+[v _nojoTaskIdle nojoTaskIdle `(*.2v  1 e 2 0 ]
+{
+"74
+} 0
+"32 F:\Documentos\UFSC\SO-Embarcados\nojo/tasks.c
+[v _pisca_led_yellow pisca_led_yellow `(*.2v  1 e 2 0 ]
+{
+"46
+} 0
+"48
+[v _pisca_led_green pisca_led_green `(*.2v  1 e 2 0 ]
+{
+"62
+} 0
+"84
+[v _modificar_temp modificar_temp `(v  1 e 1 0 ]
+{
+"89
+[v modificar_temp@temp temp `ui  1 a 2 17 ]
+"106
+} 0
+"64
+[v _valor_res_motor valor_res_motor `(v  1 e 1 0 ]
+{
+"66
+[v valor_res_motor@motor motor `i  1 a 2 12 ]
+[v valor_res_motor@resistor resistor `i  1 a 2 10 ]
+"64
+[v valor_res_motor@temp temp `ui  1 p 2 8 ]
+"83
+} 0
+"30 F:\Documentos\UFSC\SO-Embarcados\nojo/perifericos.c
+[v _PWM1_value PWM1_value `(v  1 e 1 0 ]
+{
+[v PWM1_value@velocidade velocidade `i  1 p 2 2 ]
+[v PWM1_value@resistencia resistencia `i  1 p 2 4 ]
+"34
+} 0
+"38
+[v _map map `(i  1 e 2 0 ]
+{
+[v map@x x `i  1 p 2 0 ]
+[v map@in_min in_min `i  1 p 2 2 ]
+[v map@in_max in_max `i  1 p 2 4 ]
+[v map@out_min out_min `i  1 p 2 6 ]
+[v map@out_max out_max `i  1 p 2 8 ]
+"41
+} 0
+"15 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v i1___wmul@product __wmul `ui  1 a 2 6 ]
+[v i1___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"53
+} 0
+"8 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 14 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 13 ]
+[v ___awdiv@counter counter `uc  1 a 1 12 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 8 ]
+[v ___awdiv@divisor divisor `i  1 p 2 10 ]
+"42
+} 0
+"17 F:\Documentos\UFSC\SO-Embarcados\nojo/perifericos.c
+[v _LerADC LerADC `(ui  1 e 2 0 ]
+{
+"18
+[v LerADC@temp temp `ui  1 a 2 6 ]
+"26
+} 0
+"109 F:\Documentos\UFSC\SO-Embarcados\nojo/tasks.c
+[v _verificarInput verificarInput `(*.2v  1 e 2 0 ]
+{
+"146
+} 0
+"150
+[v _botaoAumentar botaoAumentar `(v  1 e 1 0 ]
+{
+"174
+} 0
+"176
+[v _mostraDisplay mostraDisplay `(v  1 e 1 0 ]
+{
+[v mostraDisplay@unidade unidade `i  1 p 2 19 ]
+[v mostraDisplay@dezena dezena `i  1 p 2 21 ]
+[v mostraDisplay@identificador identificador `uc  1 p 1 23 ]
+"183
+} 0
+"33 F:\Documentos\UFSC\SO-Embarcados\nojo/timer.c
+[v _timer_ISR timer_ISR `II(v  1 e 1 0 ]
+{
+"40
+} 0
+"25
+[v _resetTimer resetTimer `(v  1 e 1 0 ]
+{
+"31
+} 0
+"38 F:\Documentos\UFSC\SO-Embarcados\nojo/kernel.c
+[v _nojoDispatcher nojoDispatcher `(v  1 e 1 0 ]
+{
+[v nojoDispatcher@state state `E3131  1 a 1 wreg ]
+"41
+[v nojoDispatcher@task_pos task_pos `ul  1 a 4 33 ]
+"38
+[v nojoDispatcher@state state `E3131  1 a 1 wreg ]
+"40
+[v nojoDispatcher@state state `E3131  1 a 1 32 ]
+"61
+} 0
+"18 F:\Documentos\UFSC\SO-Embarcados\nojo/scheduler.c
+[v _RR_scheduler RR_scheduler `(ul  1 e 4 0 ]
+{
+"20
+[v RR_scheduler@pos_next_task pos_next_task `ul  1 a 4 21 ]
+[v RR_scheduler@i i `ul  1 a 4 17 ]
+[v RR_scheduler@installed installed `ul  1 a 4 13 ]
+"28
+} 0
+"15 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v i2___wmul@product __wmul `ui  1 a 2 4 ]
+[v i2___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i2___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"8 F:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 8 ]
+"8
+[v ___llmod@dividend dividend `ul  1 p 4 0 ]
+[v ___llmod@divisor divisor `ul  1 p 4 4 ]
+"26
+} 0
